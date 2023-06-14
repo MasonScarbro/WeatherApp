@@ -1,0 +1,106 @@
+body {
+   
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body.night {
+    background-image: url('./img/Night.svg');
+}
+
+body.day {
+    background-image: url('./img/Day.svg');
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentHolder {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    width: 100%; 
+    max-width: 25%; 
+    word-wrap: break-word; 
+    gap: 25px;
+}
+.mainInfoHolder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.forcastHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 99%;
+    
+
+}
+
+img.currIcon {
+    width: 70%;
+    height: auto;
+}
+
+.currentHolder {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: saturate(150%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);;
+}
+
+.forcastDay1 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: saturate(150%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);;
+    padding: 15px;
+    width: 10%;
+}
+.forcastDay2 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: saturate(150%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);;
+    padding: 15px;
+    width: 10%;
+}
+.forcastDay3 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: saturate(150%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);;
+    padding: 15px;
+    width: 10%;
+}
+.centerImg {
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: saturate(150%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 10px;
+}
