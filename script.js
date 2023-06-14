@@ -38,7 +38,7 @@ searchInput.addEventListener('keydown',async (e) => {
 // fetch the current data and wait then parse then using the API calls return the values I need/want 
 // by Using a factory function I can add the respecive values I want whenever I want and not blow up my code
 async function current() {
-    const data = await fetch('http://api.weatherapi.com/v1/current.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&aqi=yes', {mode: 'cors'});
+    const data = await fetch('https://api.weatherapi.com/v1/current.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&aqi=yes', {mode: 'cors'});
     const result = await data.json();
     return {
         feelsLike: result.current.feelslike_f,
@@ -56,7 +56,7 @@ async function current() {
 
 // fetch the tiem data and wait then parse then using the API calls return teh values I need/want 
 async function time() {
-    const data = await fetch('http://api.weatherapi.com/v1/timezone.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&aqi=yes', {mode: 'cors'});
+    const data = await fetch('https://api.weatherapi.com/v1/timezone.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&aqi=yes', {mode: 'cors'});
     const result = await data.json();
     return {
         currtime: result.location.localtime
@@ -65,7 +65,7 @@ async function time() {
 
 // fetch the forecast data and wait then parse then using the API calls return the values I need/want 
 async function forecast() {
-    const data = await fetch('http://api.weatherapi.com/v1/forecast.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&days=3&aqi=yes', {mode: 'cors'});
+    const data = await fetch('https://api.weatherapi.com/v1/forecast.json?key=137a088efb4a4b8d87a03031231006&q=' + cityName + '&days=3&aqi=yes', {mode: 'cors'});
     const result = await data.json();
     return {
         forecastday1max: result['forecast']['forecastday'][0]['day']['maxtemp_f'],
